@@ -88,7 +88,7 @@ resource "aws_security_group" "demosg" {
   }
 }
 
-resource "aws_instance" "host" {
+resource "aws_instance" "alpha" {
   ami                       = "ami-02eb7a4783e7e9317"
   instance_type             = "t2.micro"
   vpc_security_group_ids    = [aws_security_group.demosg.id]
