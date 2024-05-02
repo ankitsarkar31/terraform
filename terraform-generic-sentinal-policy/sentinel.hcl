@@ -11,7 +11,7 @@ module "tfconfig-functions" {
 }
 
 module "gcp-functions" {
-    source = "./gcp-functions/gcp-functions.sentinel"
+    source = "../gcp-functions/gcp-functions.sentinel"
 }
 
 policy "enforce-mandatory-labels" {
